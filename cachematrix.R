@@ -1,4 +1,4 @@
-## These two functions work together to create a cache of a matrix.
+## These two functions work together to create a cache of an inverse matrix.
 ## One function is a list of functions that manipulate the matrix
 ## The other function grabs the cache or creates a cache 
 
@@ -21,7 +21,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## This function takes a makeCacheMatrix function as input
-## checks and grabs the cached Matrix, otherwise, creates a cached Matrix
+## checks and grabs the cached inverse Matrix, otherwise, creates a cached inverse matrix
 
 cachesolve <- function(x, ...) {
         m <- x$getsolve()
